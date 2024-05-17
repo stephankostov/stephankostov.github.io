@@ -152,13 +152,13 @@ body {
 
     }
 
-    .buttons {
+    .cbuttons {
 
         padding-top: 40px;
         box-sizing: content-box;
         height: 100%;
 
-        .cbuttons {
+        .navbuttons {
 
             margin: auto;
             padding: 45px;
@@ -183,13 +183,6 @@ body {
 
 
 }
-
-.navbuttons {
-
-
-}
-
-
 
 .skills {
 
@@ -261,8 +254,7 @@ hr {
     padding-left: 20px;
     padding-bottom: 20px;
 }
-.entry {
-}
+
 .entry-dot {
     position: absolute;
     top: 0px;
@@ -351,9 +343,7 @@ hr {
     float: left;
     margin-right: 10px;
 }
-.pdesc {
 
-}
 .pend {
     clear: both;
 }
