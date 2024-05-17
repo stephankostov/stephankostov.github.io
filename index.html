@@ -8,9 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-        <!-- idea: have a javascript animated loss function converging in the header? :p -->
-        <div id="dhead" class="container">
-            <div class="column">
+        <div class="landing">
+            <div id="dhead" class="container">
                 <div class="row">
                     <div class="dpic">
                         <img src="assets/me.png" class="ppic" />
@@ -20,28 +19,97 @@
                     <h2>I'm an engineer with a fascination for Machine Learning.</h2>
                     <div id="dico">
                         <a href="https://github.com/stephankostov"><img src="assets/cgithub.svg" class="iico"/></a>
+                        <a href="https://www.linkedin.com/in/stephankostov/"><img src="assets/clinkedin.svg" class="iico"/></a>
                         <img src="assets/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
-                        <a href="https://github.com/stephankostov"><img src="assets/cgithub.svg" class="iico"/></a>
+                        <a href="https://drive.google.com/file/d/1LXepznidiMvP8RuUuY2cjPD3rKS-NI_8/view"><img src="assets/ccv.svg" class="iico"/></a>
                     </div>
                     <div id="demail"></div> <!-- will reveal email -->
+                    </div>
+            </div>
+            </div>
+
+            <hr>
+
+            <div class="home">
+                <div class="cvideo">
+                    <div class="videocv">
+                        <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/W3ABHsrQshE"></iframe>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="cbuttons">
+                        <a class="btn" href="#skills">Skills</a>
+                        <a class="btn" href="#projects">Projects</a>
+                        <a class="btn" href="#experience">Experience</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <hr>
-
-        <div class="home container">
-            <div class="video">
-                <iframe class="videocv" src="https://www.youtube.com/embed/W3ABHsrQshE"></iframe>
-            </div>
-            <div class="navbuttons">
-                <a class="btn" href="#skills">Skills</a>
-                <a class="btn" href="#projects">Projects</a>
-                <a class="btn" href="#experience">Experience</a>
-            </div>
         </div>
 
     </div>
+
+    <hr>
+
+    <div id="skills" class="container">
+        <div class="ctitle">Skills</div>
+            <div class="skills">
+                <div class="skill">
+                    <div class="sico"><img src="assets/ml_architecture.png"/></div>
+                    <div class="stitle">ML Architectures and Training</div>
+                    <div class="sdesc">The main aim of my studies has been to to build a robust foundation of knowledge of ML models, from the maths behind them to their implementation and training in PyTorch. This has been an ever-evolving process, starting starting from statistic and probabilistic foundations in my MSc towards self-studied courses/papers on Deep Learning specifics.</div>
+                </div>
+                <div class="skill">
+                    <div class="sico"><img src="assets/ml_application.png" /></div>
+                    <div class="stitle">ML Application Building</div>
+                    <div class="sdesc">With my combination of Software Engineering principles and Machine Learning foundations I have developed a number of ML applications. Most noteably, an end-to-end cooking recipe generation project using data of foods' molecular compositions, as well as my main project as a Software Engineer at Sky: the development of an assistant Slack chatbot application which served as a core automation fascilitation for the DevOps support department. </div>
+                </div>
+                <div class="skill">
+                    <div class="sico"><img src="assets/data_eng.png" /></div>
+                    <div class="stitle">Data Engineering</div>
+                    <div class="sdesc">Through building real-world ML applications I have come to appreciate the importance of Data Engineering. The bulk work of my Recipe Generator project was building the dataset behind it, which involved creating a fuzzy matching library to link 3 datasets together, and the distributed data processing & feature engineering that came along with this. On top of that I have had a taste of building ETL pipelines through a practice project pulling data from BigQuery using Apache Beam.</div>
+                </div>
+                <div class="skill">
+                    <div class="sico"><img src="assets/deployment.png" /></div>
+                    <div class="stitle">Production Deployments</div>
+                    <div class="sdesc">From my 1.5 years DevOps Engineering experience at <a href="https://www.skygroup.sky/">Sky</a> I gained an extensive overview of how software services are deployed by being responsible for the infrastructure around it. Specifically here I was working closely with our on-premise servers integrated with Kubernetes, creating automated deployment pipelines, and managing infrastructure tools around these such as Apache Kafka, ElasticSearch, Prometheus, and Grafana.</div>
+                </div>
+                <div class="skill">
+                    <div class="sico"><img src="assets/data_visualization.png" /></div>
+                    <div class="stitle">Data Visualisation</div>
+                    <div class="sdesc">I have various skills in communicating ideas through data visualisation by various experiences. Most noteably practiced through my MSc in Data Analytics (R and matplotlib), as well as during my work as a DevOps engineer creating real-time server metric dashboards in Grafana.</div>
+                </div>
+            </div>
+    </div>
+
+    <hr>
+
+    <div id="projects" class="container">
+        <div class="ctitle">ML Projects</div>
+        <div class="project">
+            <div class="pico"><img src="assets/recipe_generator_icon_pot.png" /></div>
+            <div class="pdesc"><a href="https://github.com/stephankostov/recipe-generator">recipe-generator</a> A generative AI application which uses data of ingredients molecular composition to create new cooking recipes. This full-scale project is where I put all my ML knowledge to the test, by engineering a dataset, and creating models by designing model architectures, model training, evaluation, and deployment.</div>
+            <div class="pend"></div>
+        </div>
+
+        <div class="project">
+            <div class="pico"><img src="assets/podcast_transcriber_icon.png" /></div>
+            <div class="pdesc"><a href="https://github.com/stephankostov/podcast-transcriber">podcast-transcriber</a> A practical AI application to transcribe podcasts to help with my notetaking. With this I was able to get a taste of using pretrained open source models to create applications. This involved using OpenAI's excellent transcription model Whisper, along with additional use of LLMs and various other NLP techniques to extract useful information. </div>
+            <div class="pend"></div>
+        </div>
+
+        <div class="project">
+            <div class="pico"><img src="assets/stars_thesis_icon.jpg" /></div>
+            <div class="pdesc"><a href="https://github.com/stephankostov/msc-data-analysis-thesis">astrophysical-star-predictor</a> My first taste of a predictive modelling project through my MSc Data Analytics thesis. Here I worked with a given dataset to create predictive models of astrophysical properties of stars from their light spectrum measures. This involved engineering features, and training traditional statistical regression as well as Machine Learning models.</div>
+            <div class="pend"></div>
+        </div>
+
+        <div class="project">
+            <div class="pico"><img src="assets/bike_hire.jpg" /></div>
+            <div class="pdesc"><a href="https://github.com/stephankostov/london-bike-hire-etl">london-bike-hire-etl</a> A quick Data Engineering project creating an ETL pipeline to gather data and process data from Google BigQuery. </div>
+            <div class="pend"></div>
+        </div>
+        </div>
 
     <hr>
 
@@ -69,7 +137,7 @@
             <img src="assets/world.png" />
             </div>
             <div class="desc">
-            I have been fortunate to have the opportunity to take a sobatical leave from work, to travel, and since settling down to learn all that I can about ML. This was done through courses, textprojects, personal projects, and open source projects.
+                I have been fortunate to have the opportunity to take a sobatical leave from work, to travel, and since settling down to learn all that I can about ML.
             </div>
         </div>
 
@@ -83,7 +151,7 @@
             </div>
             <div class="desc">
             <div class="htxt">
-                As a consultant I began to work as a DevOps Engineer at Sky. I was involved in a wide range of projects around the company's software deployment infrastructure. Here I was able to work with and learn from a bunch of excellent engineers, through overseeing production software is built and maintained. On top of this, I was also led a project of the development of an assistant Slack chatbot application to serve as a core automation platform for the DevOps support department. 
+                As a consultant I began to work as a DevOps Engineer at Sky. I was involved in a wide range of projects around the company's software deployment infrastructure. On top of this, I also led a project of the development of an assistant Slack chatbot application in Javascript, to serve as a core automation platform for the DevOps support department. 
             </div>
             </div>
         </div>
@@ -141,68 +209,6 @@
         </div>
 
         <hr>
-
-        <div id="projects" class="container">
-        <div class="ctitle">ML Projects</div>
-        <div class="project">
-            <div class="pico"><img src="assets/recipe_generator_icon_pot.png" /></div>
-            <div class="pdesc"><a href="https://github.com/stephankostov/recipe-generator">recipe-generator</a> A generative AI application which uses data of ingredients molecular composition to create new cooking recipes. This full-scale project is where I put all my ML knowledge to the test, by engineering a dataset, and creating models by designing model architectures, model training, evaluation, and deployment.</div>
-            <div class="pend"></div>
-        </div>
-
-        <div class="project">
-            <div class="pico"><img src="assets/podcast_transcriber_icon.png" /></div>
-            <div class="pdesc"><a href="https://github.com/stephankostov/podcast-transcriber">podcast-transcriber</a> A practical AI application to transcribe podcasts to help with my notetaking. With this I was able to get a taste of using pretrained open source models to create applications. This involved using OpenAI's excellent transcription model Whisper, along with additional use of LLMs and various other NLP techniques to extract useful information. </div>
-            <div class="pend"></div>
-        </div>
-
-        <div class="project">
-            <div class="pico"><img src="assets/stars_thesis_icon.jpg" /></div>
-            <div class="pdesc"><a href="https://github.com/stephankostov/msc-data-analysis-thesis">astrophysical-star-predictor</a> My first taste of a predictive modelling project through my MSc Data Analytics thesis. Here I worked with a given dataset to create predictive models of astrophysical properties of stars from their light spectrum measures. This involved engineering features, and training traditional statistical regression as well as Machine Learning models.</div>
-            <div class="pend"></div>
-        </div>
-
-        <div class="project">
-            <div class="pico"><img src="assets/bike_hire.jpg" /></div>
-            <div class="pdesc"><a href="https://github.com/stephankostov/london-bike-hire-etl">london-bike-hire-etl</a> A quick Data Engineering project creating an ETL pipeline to gather data and process data from Google BigQuery. </div>
-            <div class="pend"></div>
-        </div>
-        </div>
-
-    <hr>
-
-    <div id="skills" class="container">
-        <div class="ctitle">Skills</div>
-            <div class="skills">
-                <div class="skill">
-                    <div class="sico"><img src="assets/ml_architecture.png"/></div>
-                    <div class="stitle">ML Architectures and Training</div>
-                    <div class="sdesc">The main aim of my studies has been to to build a robust foundation of knowledge of ML models, from the maths behind them to their implementation and training in PyTorch. This has been an ever-evolving process, starting starting from statistic and probabilistic foundations in my MSc towards self-studied courses/papers on Deep Learning specifics.</div>
-                </div>
-                <div class="skill">
-                    <div class="sico"><img src="assets/ml_application.png" /></div>
-                    <div class="stitle">ML Application Building</div>
-                    <div class="sdesc">With my combination of Software Engineering principles and Machine Learning foundations I have developed a number of ML applications. Most noteably, an end-to-end cooking recipe generation project using data of foods' molecular compositions, as well as my main project as a Software Engineer at Sky: the development of an assistant Slack chatbot application which served as a core automation fascilitation for the DevOps support department. </div>
-                </div>
-                <div class="skill">
-                    <div class="sico"><img src="assets/data_eng.png" /></div>
-                    <div class="stitle">Data Engineering</div>
-                    <div class="sdesc">Through building real-world ML applications I have come to appreciate the importance of Data Engineering. The bulk work of my Recipe Generator project was building the dataset behind it, which involved creating a fuzzy matching library to link 3 datasets together, and the distributed data processing & feature engineering that came along with this. On top of that I have had a taste of building ETL pipelines through a practice project pulling data from BigQuery using Apache Beam.</div>
-                </div>
-                <div class="skill">
-                    <div class="sico"><img src="assets/deployment.png" /></div>
-                    <div class="stitle">Production Deployments</div>
-                    <div class="sdesc">From my 1.5 years DevOps Engineering experience at <a href="https://www.skygroup.sky/">Sky</a> I gained an extensive overview of how software services are deployed by being responsible for the infrastructure around it. Specifically here I was working closely with our on-premise servers integrated with Kubernetes, creating automated deployment pipelines, and managing infrastructure tools around these such as Apache Kafka, ElasticSearch, Prometheus, and Grafana.</div>
-                </div>
-                <div class="skill">
-                    <div class="sico"><img src="assets/data_visualization.png" /></div>
-                    <div class="stitle">Data Visualisation</div>
-                    <div class="sdesc">I have various skills in communicating ideas through data visualisation by various experiences. Most noteably practiced through my MSc in Data Analytics (R and matplotlib), as well as during my work as a DevOps engineer creating real-time server metric dashboards in Grafana.</div>
-                </div>
-            </div>
-    </div>
-
-    <hr>
 
     <div class="container">
         <div class="ctitle">Reading List</div>
