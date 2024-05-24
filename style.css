@@ -156,12 +156,10 @@ body {
         box-sizing: content-box;
 
         .navbuttons {
-
-            margin: auto;
             padding: 45px;
             width: 100%;
             /* box-sizing: border-box; */
-            /* text-align: center !important; */
+            text-align: center !important;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
