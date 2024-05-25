@@ -39,201 +39,180 @@ body {
 }
 
 
-#dhead {
-
+.head {
     margin-top: 20px;
+}
 
-    .dpic {
+.head .dpic {
+    grid-column: span 5;
+    text-align: right;
+}
 
-        grid-column: span 5;
-        text-align: right;
+.head .dpic img {  
+    width: 12rem;
+    height: 12rem;
+    border-radius: 6em;
+}
 
-        img {
-            
-            width: 12rem;
-            height: 12rem;
-            border-radius: 6em;
+.hdesc {
+    padding-top: 38px;
+    padding-left: 20px;
+    grid-column: span 5;
+}
 
-        }
+.hdesc h1 {
+    font-size: 34px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
 
-    }
+.hdesc h2 {
+    font-weight: normal;
+    font-style: italic;
+    color: #999;
+    font-size: 18px;
+    padding: 0;
+    margin: 5px 0 10px 0;
+}
 
-    #ddesc {
-
-        padding-top: 38px;
-        padding-left: 20px;
-        grid-column: span 5;
-    
-        h1 {
-            font-size: 34px;
-            font-weight: normal;
-            padding: 0;
-            margin: 0;
-        }
-    
-        h2 {
-            font-weight: normal;
-            font-style: italic;
-            color: #999;
-            font-size: 18px;
-            padding: 0;
-            margin: 5px 0 10px 0;
-        }
-    
-        @media (min-width: 992px) {
-            h2 {
-                max-width: 300px;
-            }
-        }
-
-        .iico {
-            width: 35px;
-            height: 35px;
-        }
-
-        #demail {
-            margin-top: 10px;
-            color: #555;
-            opacity: 0;
-            transition: opacity 0.7s;
-        }
-
-    }
-
-    @media (max-width: 991px) {
-        .dpic {
-            grid-column: span 12;
-            text-align: center;
-        }
-    }
-
-    @media (max-width: 991px) {
-        #ddesc {
-          grid-column: span 12;
-          padding-top: 20px;
-          text-align: center;
-        }
+@media (min-width: 992px) {
+    .hdesc h2 {
+        max-width: 300px;
     }
 }
 
+.hdesc .iico {
+    width: 35px;
+    height: 35px;
+}
+
+.hdesc #demail {
+    margin-top: 10px;
+    color: #555;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+@media (max-width: 991px) {
+    .head .dpic {
+        grid-column: span 12;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .head .hdesc {
+      grid-column: span 12;
+      padding-top: 20px;
+      text-align: center;
+    }
+}
 
 .home {
+    height: 100%
+}
 
-    display: flexbox;
+.home .cvideo {
+    padding: 40px 40px 40px 40px;
+}
+
+.home .videocv {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin: 0;
+}
+
+.home iframe {
+    position: absolute;
+    width: 100%;
     height: 100%;
+    left: 0;
+    top: 0;
+}   
 
-    .cvideo {
-        padding: 40px 40px 40px 40px;
-    }
+.home .cbuttons {
+    box-sizing: content-box;
+}
 
-    .videocv {
+.home .navbuttons {
+    width: 100%;
+    text-align: center !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%;
-        margin: 0;
-
-        iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-        }   
-
-    }
-
-    .cbuttons {
-
-        box-sizing: content-box;
-
-        .navbuttons {
-            width: 100%;
-            /* box-sizing: border-box; */
-            text-align: center !important;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        
-            .btn {
-                display: flex;
-                box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-                padding: 1.25rem 2.5rem;
-                margin: 0.5em 0.25em 0 0.25em;
-                border: 1px solid transparent;
-                color: #212529;
-                background-color: #f8f9fa;
-                border-color: #212529;
-            }
-        }
-
-    }
-
-
-
+.home .navbuttons .btn {
+    display: flex;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem 2.5rem;
+    margin: 0.5em 0.25em 0 0.25em;
+    border: 1px solid transparent;
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #212529;
 }
 
 .skills {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
-    & .skill {
-        flex: 0 0 32%;
-        text-align: center;
-    }
-
-    & .sico {
-        box-sizing: border-box;
-
-        & img {
-            height: 5rem;
-            width: 5rem;
-            padding: 4px;
-            object-fit: scale-down;
-        }
-    }
-
-    & .stitle {
-        font-weight: bold
-    }
-
-    & .sdesc {
-        font-size: 14px
-    }
-    
-    & .sapplication {
-        font-size: 14px
-    }
-    
-    & .sknowledge {
-        font-size: 14px
-    }
-    
-
 }
 
-#experience {
-    .ico {
-        grid-column: span 1;
-        vertical-align: top;
-        border-left: 2px solid #cfcfcf;
-        position: relative;
-        padding-left: 7px;
-        /* width: 100px; */
-        img {
-            display: block;
-            width: 5rem;
-            height: 5rem;
-            /* height: auto; */
-            object-fit: contain;
-        }
-    }
-    .entry {
-        padding-bottom: 0.5rem;
-    }
+.skills .skill {
+    flex: 0 0 32%;
+    text-align: center;
+}
+
+.skills .sico {
+    box-sizing: border-box;
+}
+
+.skills .sico img{
+    height: 5rem;
+    width: 5rem;
+    padding: 4px;
+    object-fit: scale-down;
+}
+
+.skills .stitle {
+    font-weight: bold
+}
+
+.skills .sdesc {
+    font-size: 14px
+}
+
+.skills .sapplication {
+    font-size: 14px
+}
+
+.skills .sknowledge {
+    font-size: 14px
+}
+
+.experience .ico {
+    grid-column: span 1;
+    vertical-align: top;
+    border-left: 2px solid #cfcfcf;
+    position: relative;
+    padding-left: 7px;
+    /* width: 100px; */
+}
+
+.experience .ico img {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    /* height: auto; */
+    object-fit: contain;
+}
+
+.experience .ico .entry {
+    padding-bottom: 0.5rem;
 }
 
 hr {
@@ -246,6 +225,7 @@ hr {
     margin: 20px 0px 20px 0px;
     border: 0;
 }
+
 .desc {
     grid-column: span 10;
     vertical-align: top;
@@ -293,36 +273,42 @@ hr {
 .cprojects {
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 0.5rem;
-    .project {
-        border: 1px solid black;
-        padding: 10px;
-    }
-    .ptitle {
-        font-weight: bold;
-        font-size: 115%;
-    }
-    div {
-        padding: 0.5rem 0;
-    }
-    h2 {
-        font-size: 105%;
-        margin: 0;
-    }
-    .pico {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-top: calc(100% * 1/3);
-        img {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-    }
+    column-gap: 10px;
+}
+
+.cprojects .project {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.cprojects .ptitle {
+    font-weight: bold;
+    font-size: 115%;
+}
+
+.cprojects div {
+    padding: 0.5rem 0;
+}
+
+.cprojects h2 {
+    font-size: 105%;
+    margin: 0;
+}
+
+.cprojects .pico {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * 1/3);
+}
+
+.cprojects .pico img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 a.fill-div {
@@ -331,22 +317,24 @@ a.fill-div {
     text-decoration: none;
 }
 
-.showcase {
+.cprojects .showcase {
     grid-template-columns: auto;
-    .pico {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-top: calc(100% * (1/5));
-        img {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: 0% 10%;
-        }
-    }
+}
+
+.cprojects .showcase .pico {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * (1/5));
+}
+
+.cprojects .showcase .pico img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 10%;
 }
 
 .project {
