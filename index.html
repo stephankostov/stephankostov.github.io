@@ -18,11 +18,11 @@
 </script>
 
 <body>
-    <div class="landing">
+    <div class="container landing">
         <div class="container head">
             <div class="row">
                 <div class="dpic">
-                    <img src="assets/me.png"/>
+                    <img src="assets/me.png" />
                 </div>
                 <div class="hdesc">
                     <h1>Stephan Kostov</h1>
@@ -42,25 +42,21 @@
         </div>
 
         <hr>
-
-        <div class="home">
-            <div class="cvideo">
+        
+        <div class="container home">
+            <div class="video-wrap">
                 <div class="videocv">
                     <iframe frameborder="0" width="100%" height="100%"
                         src="https://www.youtube.com/embed/W3ABHsrQshE"></iframe>
                 </div>
             </div>
-            <div class="cbuttons">
-                <div class="navbuttons">
-                    <a class="btn" href="#skills">Skills</a>
-                    <a class="btn" href="#projects">Projects</a>
-                    <a class="btn" href="#experience">Experience</a>
-                    <a class="btn" href="#reading_list">Books</a>
-                </div>
+            <div class="navbuttons">
+                <a class="btn" href="#skills">Skills</a>
+                <a class="btn" href="#projects">Projects</a>
+                <a class="btn" href="#experience">Experience</a>
+                <a class="btn" href="#reading_list">Books</a>
             </div>
         </div>
-
-    </div>
 
     </div>
 
@@ -117,9 +113,9 @@
 
     <hr>
 
-    <div class="container projects">
+    <div id="projects" class="container">
         <div class="ctitle">ML Projects</div>
-        <div class="cprojects showcase">
+        <div class="projects showcase">
             <div class="project">
                 <a href="https://github.com/stephankostov/recipe-generator" class="fill-div">
                     <div class="ptitle">Molecular Compound Cooking Recipe Generator</div>
@@ -139,10 +135,9 @@
                     </ul>
                     <h2><a href="https://stephankostov-recipe-generator.streamlit.app/">See Demo</a></h2>
                 </div>
-                <!-- <div class="pend"></div> -->
             </div>
         </div>
-        <div class="cprojects">
+        <div class="projects">
             <div class="project">
                 <a href="https://github.com/stephankostov/podcast-transcriber" class="fill-div">
                     <div class="ptitle">Podcast Transcriber</div>
@@ -175,7 +170,7 @@
 
     <hr>
 
-    <div class="container experience">
+    <div id="experience" class="container">
         <div class="ctitle">Experience</div>
         <div class="entry row">
             <div class="timespan">

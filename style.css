@@ -24,7 +24,6 @@ body {
     }
 }
 
-
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -113,8 +112,8 @@ body {
     height: 100%
 }
 
-.home .cvideo {
-    padding: 40px 40px 40px 40px;
+.home .video-wrap {
+    padding: 40px
 }
 
 .home .videocv {
@@ -133,11 +132,8 @@ body {
     top: 0;
 }   
 
-.home .cbuttons {
-    box-sizing: content-box;
-}
-
 .home .navbuttons {
+    box-sizing: content-box;
     width: 100%;
     text-align: center !important;
     display: flex;
@@ -194,7 +190,7 @@ body {
     font-size: 14px
 }
 
-.experience .ico {
+#experience .ico {
     grid-column: span 1;
     vertical-align: top;
     border-left: 2px solid #cfcfcf;
@@ -203,7 +199,7 @@ body {
     /* width: 100px; */
 }
 
-.experience .ico img {
+#experience .ico img {
     display: block;
     width: 5rem;
     height: 5rem;
@@ -211,7 +207,7 @@ body {
     object-fit: contain;
 }
 
-.experience .ico .entry {
+#experience .ico .entry {
     padding-bottom: 0.5rem;
 }
 
@@ -270,39 +266,39 @@ hr {
     }
 }
 
-.cprojects {
+.projects {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 10px;
 }
 
-.cprojects .project {
+.projects .project {
     border: 1px solid black;
     padding: 10px;
 }
 
-.cprojects .ptitle {
+.projects .ptitle {
     font-weight: bold;
     font-size: 115%;
 }
 
-.cprojects div {
+.projects div {
     padding: 0.5rem 0;
 }
 
-.cprojects h2 {
+.projects h2 {
     font-size: 105%;
     margin: 0;
 }
 
-.cprojects .pico {
+.projects .pico {
     position: relative;
     width: 100%;
     height: 0;
     padding-top: calc(100% * 1/3);
 }
 
-.cprojects .pico img {
+.projects .pico img {
     position: absolute;
     top: 0;
     width: 100%;
@@ -317,18 +313,18 @@ a.fill-div {
     text-decoration: none;
 }
 
-.cprojects .showcase {
+.projects .showcase {
     grid-template-columns: auto;
 }
 
-.cprojects .showcase .pico {
+.projects .showcase .pico {
     position: relative;
     width: 100%;
     height: 0;
     padding-top: calc(100% * (1/5));
 }
 
-.cprojects .showcase .pico img {
+.projects .showcase .pico img {
     position: absolute;
     top: 0;
     width: 100%;
