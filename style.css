@@ -342,3 +342,8 @@ a.fill-div {
 .pend {
     clear: both;
 }
+
+.credits {
+    margin: 10px;
+    font-size: 75%;
+}
